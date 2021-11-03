@@ -3,5 +3,5 @@ import s from './Home.module.scss';
 interface Props {}
 
 export const Home = (props: Props) => {
-  return <div className={s.home}>home</div>;
+  return <div className={s.home}></div>;
 };
