@@ -34,7 +34,7 @@ export const ThisDayInfo = (props: Props) => {
   ];
   return (
     <div className={s.this__day__info}>
-      <div className={s.this__day__info__items}>
+      <div className={s.this__day__info__items}> 
         {items.map((item: Item) => {
           return <ThisDayItem key={item.icon_id} item={item} />;
         })}
