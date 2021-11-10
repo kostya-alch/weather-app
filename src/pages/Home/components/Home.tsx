@@ -14,7 +14,7 @@ export const Home = (props: Props) => {
   const { weather } = useCustomSelector(selectCurrentWeatherData);
 
   useEffect(() => {
-    dispatch(fetchCurrentWeather('paris'));
+    dispatch(fetchCurrentWeather('Saint Petersburg'));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

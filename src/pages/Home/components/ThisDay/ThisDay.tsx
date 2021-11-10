@@ -7,9 +7,6 @@ interface Props {
 }
 
 export const ThisDay = ({ weather }: Props) => {
-  const time = () => {
-   return new Date().toLocaleTimeString()
-  }
   return (
     <div className={s.this__day}>
       <div className={s.top__block}>
@@ -24,7 +21,7 @@ export const ThisDay = ({ weather }: Props) => {
           Время: <span>{new Date().toLocaleTimeString()}</span>
         </div>
         <div className={s.this__city}>
-          Город: <span>Санкт-Петербург</span>
+          Город: <span>{weather.name}</span>
         </div>
       </div>
     </div>
